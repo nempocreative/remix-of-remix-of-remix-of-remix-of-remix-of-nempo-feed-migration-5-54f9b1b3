@@ -851,6 +851,8 @@
   --nci-pink-deep: #e2457f;
   --nci-mint: #5fe0b0;
   --nci-lilac: #b79cff;
+  --nci-tape: color-mix(in srgb, #fff3b0 80%, transparent);
+  --nci-sun-glow: radial-gradient(circle, color-mix(in srgb, #ffe27a 55%, transparent) 0%, transparent 65%);
   --nci-card: color-mix(in srgb, #ffffff 92%, transparent);
   --nci-pop: 0 .7cqw 0 #1453b8;
   --nci-text-pop: 0 .3cqw 0 #1453b8, 0 .6cqw 1.4cqw color-mix(in srgb, #0b2f74 45%, transparent);

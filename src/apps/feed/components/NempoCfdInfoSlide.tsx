@@ -1,16 +1,28 @@
 import type { RefObject } from 'react';
-import { MapPin } from 'lucide-react';
+import { Bike, MapPin, Mountain, Route, UtensilsCrossed } from 'lucide-react';
 import crowdPhoto from '@/assets/nempo-feed-58/nempo-feed-58-cfd-keramaian.webp.asset.json';
 import mountainPhoto from '@/assets/nempo-feed-58/nempo-feed-58-cfd-gunung.webp.asset.json';
 import { NempoFooter, NempoHeader } from './KalaMudaRecruitSlide';
 import { nempoCfdInfo as C } from './nempo-cfd-info';
 import './NempoCfdInfoSlide.css';
 
+const FACT_ICONS = { bike: Bike, mountain: Mountain, food: UtensilsCrossed, road: Route } as const;
+
+const PHOTOS = [
+  {
+    src: crowdPhoto.url,
+    alt: 'Foto asli suasana ramai Car Free Day Minggu pagi di Jl. Ibrahim Adjie Garut: pengunjung berjalan di antara tenda pedagang warna-warni.',
+  },
+  {
+    src: mountainPhoto.url,
+    alt: 'Foto asli Jl. Ibrahim Adjie Garut dengan deretan gerobak pedagang dan Gunung Guntur di belakangnya.',
+  },
+];
+
 /**
- * NEMPO Feed slide 58 (3:4): the informative Car Free Day post for Jl. Letjen Ibrahim Adjie, Garut — same
- * bright playful poster look as slide 57, but with real photos from local news instead of AI artwork: the
- * Sunday-morning crowd (Radar Garut) and the road with Mount Guntur behind it (Infogarut), shown as tilted
- * polaroid cards under a CSS-typed title, with a white card of four facts above the shared footer.
+ * NEMPO Feed slide 58 (3:4): the informative Car Free Day post for Jl. Letjen Ibrahim Adjie, Garut — slide 57's
+ * bright palette with two real news photos as taped polaroids (caption + credit), then a white card of four
+ * icon facts above the shared footer.
  */
 export function NempoCfdInfoSlide({ exportRef }: { exportRef?: RefObject<HTMLElement | null> }) {
   return (
@@ -30,29 +42,32 @@ export function NempoCfdInfoSlide({ exportRef }: { exportRef?: RefObject<HTMLEle
       <p className="nci-tagline"><MapPin aria-hidden="true" />{C.tagline}</p>
       <p className="nci-release">{C.release}</p>
 
-      <figure className="nci-polaroid nci-polaroid-left">
-        <img
-          src={crowdPhoto.url}
-          alt="Foto asli suasana ramai Car Free Day Minggu pagi di Jl. Ibrahim Adjie Garut: pengunjung berjalan di antara tenda pedagang warna-warni. (Foto: Radar Garut)"
-          draggable={false}
-        />
-      </figure>
-      <figure className="nci-polaroid nci-polaroid-right">
-        <img
-          src={mountainPhoto.url}
-          alt="Foto asli Jl. Ibrahim Adjie Garut dengan deretan tenda pedagang dan pemandangan Gunung Guntur di belakangnya. (Foto: Infogarut)"
-          draggable={false}
-        />
-      </figure>
+      <div className="nci-photos">
+        {PHOTOS.map((p, i) => (
+          <figure key={p.src} className="nci-polaroid">
+            <img src={p.src} alt={p.alt} draggable={false} />
+            <figcaption>
+              <span className="nci-caption">{C.photos[i]?.caption}</span>
+              <span className="nci-credit">{C.photos[i]?.credit}</span>
+            </figcaption>
+          </figure>
+        ))}
+      </div>
 
       <div className="nci-card">
         <ul className="nci-facts">
-          {C.facts.map((f) => (
-            <li key={f.heading}>
-              <p className="nci-fact-heading">{f.heading}</p>
-              <p className="nci-fact-text">{f.text}</p>
-            </li>
-          ))}
+          {C.facts.map((f) => {
+            const Icon = FACT_ICONS[f.icon];
+            return (
+              <li key={f.heading}>
+                <span className="nci-fact-icon"><Icon aria-hidden="true" /></span>
+                <div>
+                  <p className="nci-fact-heading">{f.heading}</p>
+                  <p className="nci-fact-text">{f.text}</p>
+                </div>
+              </li>
+            );
+          })}
         </ul>
         <p className="nci-cta">{C.cta}</p>
       </div>
