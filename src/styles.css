@@ -838,6 +838,23 @@
   --ncfd-pop: 0 .7cqw 0 #1453b8;
   --ncfd-text-pop: 0 .3cqw 0 #1453b8, 0 .6cqw 1.4cqw color-mix(in srgb, #0b2f74 45%, transparent);
 }
+/* Nempo Feed slide 58: informative Car Free Day poster with real news photos — same palette as slide 57. */
+.nci-root {
+  --nci-sky: linear-gradient(180deg, #0a7fe8 0%, #1b98fb 22%, #2aa6fd 30%);
+  --nci-sky-tint: linear-gradient(180deg, color-mix(in srgb, #0a62cc 82%, transparent) 0%, color-mix(in srgb, #0f7ae6 62%, transparent) 50%, transparent 100%);
+  --nci-title-pop: 0 .55cqw 0 #1453b8, 0 0 1.6cqw color-mix(in srgb, #0b3f9a 60%, transparent);
+  --nci-white: #ffffff;
+  --nci-navy: #15386f;
+  --nci-sun: #ffd23f;
+  --nci-sun-deep: #e8901c;
+  --nci-pink: #ff7fb4;
+  --nci-pink-deep: #e2457f;
+  --nci-mint: #5fe0b0;
+  --nci-lilac: #b79cff;
+  --nci-card: color-mix(in srgb, #ffffff 92%, transparent);
+  --nci-pop: 0 .7cqw 0 #1453b8;
+  --nci-text-pop: 0 .3cqw 0 #1453b8, 0 .6cqw 1.4cqw color-mix(in srgb, #0b2f74 45%, transparent);
+}
 /* Nempo Feed slide 48: 3:4 sawer clip — same natural palette as slides 46 and 47. */
 .nbf-root {
   --nbf-night: #162d26;

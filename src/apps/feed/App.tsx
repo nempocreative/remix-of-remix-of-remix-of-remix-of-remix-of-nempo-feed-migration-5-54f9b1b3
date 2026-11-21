@@ -269,7 +269,10 @@ import { NempoKolaborasiSlide } from './components/NempoKolaborasiSlide';
 import { NempoKolaborasiPosterSlide } from './components/NempoKolaborasiPosterSlide';
 import { NEMPO_CAR_FREE_DAY_SLIDE } from './components/nempo-car-free-day';
 import { NempoCarFreeDaySlide } from './components/NempoCarFreeDaySlide';
+import { NEMPO_CFD_INFO_SLIDE } from './components/nempo-cfd-info';
+import { NempoCfdInfoSlide } from './components/NempoCfdInfoSlide';
 import carFreeDay57Png from '@/assets/nempo-feed-57/nempo-feed-57-car-free-day.png.asset.json';
+import cfdInfo58Png from '@/assets/nempo-feed-58/nempo-feed-58-cfd-info.png.asset.json';
 import kolaborasi55Png from '@/assets/nempo-feed-55/nempo-feed-55-calling-cafe-wisata.png.asset.json';
 import kolaborasi56Png from '@/assets/nempo-feed-55/nempo-feed-56-cara-kolaborasi.png.asset.json';
 import { NempoTerimaKasihSlide } from './components/NempoTerimaKasihSlide';
@@ -352,7 +355,8 @@ type FeedSlide =
   | 54
   | 55
   | 56
-  | 57;
+  | 57
+  | 58;
 
 type ClientSlide = 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 | 11 | 12 | 13 | 14 | 15 | 16 | 17 | 18 | 19 | 20 | 21 | 22 | 23 | 24 | 25 | 26 | 27 | 28 | 29 | 30 | 31 | 32 | 33 | 34 | 35 | 36 | 37 | 38 | 39 | 40 | 41 | 42 | 43 | 44 | 45 | 46 | 47 | 48 | 49 | 50 | 51 | 52 | 53 | 54 | 55 | 56 | 57 | 58 | 59 | 60 | 61 | 62;
 
@@ -3504,7 +3508,7 @@ function App() {
       ? isGgsStory
         ? [1, 2, 3, 4, 5, 6, 7]
         : [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62]
-      : [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, ...DIVISION_SLIDES, NEMPO_PAHLAWAN_SLIDE, NEMPO_CS_SLIDE, NEMPO_BAJIDORAN_SLIDE, NEMPO_BAJIDORAN_REEL_SLIDE, NEMPO_BAJIDORAN_SAWER_SLIDE, 49, NEMPO_SADULI_DJ_SLIDE, NEMPO_AJAK_REQUEST_SLIDE, NEMPO_HARI_INI_SLIDE, NEMPO_TERIMA_KASIH_SLIDE, NEMPO_MALAM_MINGGU_SLIDE, NEMPO_KOLABORASI_SLIDE, NEMPO_KOLABORASI_CARA_SLIDE, NEMPO_CAR_FREE_DAY_SLIDE];
+      : [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, ...DIVISION_SLIDES, NEMPO_PAHLAWAN_SLIDE, NEMPO_CS_SLIDE, NEMPO_BAJIDORAN_SLIDE, NEMPO_BAJIDORAN_REEL_SLIDE, NEMPO_BAJIDORAN_SAWER_SLIDE, 49, NEMPO_SADULI_DJ_SLIDE, NEMPO_AJAK_REQUEST_SLIDE, NEMPO_HARI_INI_SLIDE, NEMPO_TERIMA_KASIH_SLIDE, NEMPO_MALAM_MINGGU_SLIDE, NEMPO_KOLABORASI_SLIDE, NEMPO_KOLABORASI_CARA_SLIDE, NEMPO_CAR_FREE_DAY_SLIDE, NEMPO_CFD_INFO_SLIDE];
   const selectedSlide =
     isGgsFeed ? activeClientSlide : activeSlide;
 
@@ -4334,6 +4338,19 @@ function App() {
                   PNG 3240×4320, teks tajam. Di iPad/iPhone pilih “Simpan Gambar” atau “Simpan ke File”.
                 </p>
               </>
+            ) : isNempoFeed && activeSlide === NEMPO_CFD_INFO_SLIDE ? (
+              <>
+                <PrebuiltPngDownload
+                  key="nempo-feed-58"
+                  src={cfdInfo58Png.url}
+                  fileName="Nempo-ID-58-Car-Free-Day-Info.png"
+                  label="Download PNG · 3×"
+                  className="inline-flex items-center gap-2 rounded-full bg-primary px-4 py-2 text-xs font-bold text-primary-foreground transition-colors hover:bg-primary/90 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring"
+                />
+                <p className="max-w-[92vw] text-center text-[10px] font-medium text-slate-600">
+                  PNG 3240×4320, teks tajam. Di iPad/iPhone pilih “Simpan Gambar” atau “Simpan ke File”.
+                </p>
+              </>
             ) : isNempoFeed && activeSlide === NEMPO_MALAM_MINGGU_SLIDE ? (
               <>
                 <PrebuiltPngDownload
@@ -4582,6 +4599,8 @@ function App() {
           <NempoKolaborasiPosterSlide exportRef={exportRef} />
         ) : isNempoFeed && activeSlide === NEMPO_CAR_FREE_DAY_SLIDE ? (
           <NempoCarFreeDaySlide exportRef={exportRef} />
+        ) : isNempoFeed && activeSlide === NEMPO_CFD_INFO_SLIDE ? (
+          <NempoCfdInfoSlide exportRef={exportRef} />
         ) : isNempoFeed && activeSlide === 49 ? (
           <NempoDjSlide src={dj49VideoAsset.url} poster={dj49PosterAsset.url} exportRef={exportRef} />
         ) : isNempoFeed && activeSlide === NEMPO_BAJIDORAN_SAWER_SLIDE ? (
