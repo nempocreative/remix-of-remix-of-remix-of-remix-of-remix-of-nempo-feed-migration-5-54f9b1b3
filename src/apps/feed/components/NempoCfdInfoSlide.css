@@ -1,0 +1,75 @@
+/* NEMPO Feed slide 58 — informative Car Free Day poster with real news photos, in slide 57's bright playful look.
+   Colors in src/styles.css (.nci-root). */
+.nci-root {
+  position: relative; isolation: isolate; width: 100%; aspect-ratio: 3 / 4; overflow: hidden;
+  container-type: inline-size; background: var(--nci-sky); color: var(--nci-white);
+  font-family: 'Fredoka', 'Poppins', sans-serif;
+}
+.nci-root * { box-sizing: border-box; }
+.nci-root p, .nci-root h2, .nci-root ul, .nci-root figure { margin: 0; padding: 0; }
+.nci-root ul { list-style: none; }
+
+/* Soft horizon glow behind the title so the white lettering pops off the bright sky */
+.nci-root::before {
+  content: ''; position: absolute; z-index: 1; inset: 0 0 auto; height: 50cqw; pointer-events: none;
+  background: var(--nci-sky-tint);
+}
+
+/* Shared Nempo Feed header: keep its own fonts and colors */
+.nci-root .kmt-header { z-index: 8; font-family: 'Bricolage Grotesque', 'DM Sans', sans-serif; }
+.nci-root .kmt-header * { letter-spacing: initial; }
+.nci-root .kmt-name { text-shadow: var(--nci-text-pop); }
+.nci-root .kmt-badge { background: color-mix(in srgb, var(--nci-navy) 60%, transparent); }
+
+/* CSS-typed bouncy white title, lifted off the bright sky by a solid blue cartoon edge */
+.nci-title {
+  position: absolute; z-index: 5; top: 12cqw; left: 0; right: 0; display: flex; flex-direction: column;
+  align-items: center; gap: .4cqw; transform: rotate(-2deg);
+  font-weight: 700; font-size: 9.2cqw; line-height: .95; letter-spacing: .01em; text-align: center;
+  text-shadow: var(--nci-title-pop);
+}
+
+/* Sticker tagline with location pin */
+.nci-root .nci-tagline {
+  position: absolute; z-index: 6; top: 39cqw; left: 50%; transform: translateX(-50%) rotate(-3deg);
+  display: flex; align-items: center; gap: 1.2cqw;
+  padding: 1.4cqw 5.4cqw 1.6cqw 4.6cqw; border-radius: 99cqw; background: var(--nci-sun); color: var(--nci-navy);
+  font-weight: 700; font-size: 3.6cqw; line-height: 1; white-space: nowrap; box-shadow: 0 .6cqw 0 var(--nci-sun-deep);
+}
+.nci-tagline svg { width: 3.6cqw; height: 3.6cqw; flex: none; color: var(--nci-pink-deep); }
+
+/* Schedule line — tilted the same way as the sticker */
+.nci-release {
+  position: absolute; z-index: 6; top: 46.5cqw; left: 0; right: 0; text-align: center; transform: rotate(-3deg);
+  font-size: 2.5cqw; font-weight: 600; letter-spacing: .14em; text-transform: uppercase; text-shadow: var(--nci-text-pop);
+}
+
+/* Real news photos as tilted polaroid cards, overlapping slightly in the middle */
+.nci-polaroid {
+  position: absolute; z-index: 4; top: 52cqw; width: 47cqw; padding: 1.6cqw 1.6cqw 4.2cqw;
+  background: var(--nci-white); border-radius: 2cqw; box-shadow: var(--nci-pop);
+}
+.nci-polaroid img { display: block; width: 100%; aspect-ratio: 4 / 3; object-fit: cover; border-radius: 1.2cqw; }
+.nci-polaroid-left { left: 4cqw; transform: rotate(-4deg); }
+.nci-polaroid-right { right: 4cqw; transform: rotate(3.5deg); }
+
+/* White card: four facts in a 2×2 grid above the shared footer */
+.nci-card {
+  position: absolute; z-index: 7; left: 5cqw; right: 5cqw; bottom: 14cqw; padding: 2.4cqw 3cqw 2.2cqw;
+  display: flex; flex-direction: column; align-items: center; gap: 1.8cqw;
+  background: var(--nci-card); border-radius: 4cqw; box-shadow: var(--nci-pop); color: var(--nci-navy);
+}
+.nci-facts { display: grid; grid-template-columns: 1fr 1fr; gap: 1.6cqw 2.2cqw; width: 100%; }
+.nci-facts li {
+  display: flex; flex-direction: column; gap: .6cqw; padding: 1.5cqw 1.7cqw; border-radius: 2.4cqw;
+  background: color-mix(in srgb, var(--nci-sun) 30%, var(--nci-white));
+}
+.nci-facts li:nth-child(2) { background: color-mix(in srgb, var(--nci-mint) 30%, var(--nci-white)); }
+.nci-facts li:nth-child(3) { background: color-mix(in srgb, var(--nci-pink) 25%, var(--nci-white)); }
+.nci-facts li:nth-child(4) { background: color-mix(in srgb, var(--nci-lilac) 30%, var(--nci-white)); }
+.nci-fact-heading { font-size: 2.8cqw; font-weight: 700; line-height: 1.1; color: var(--nci-navy); }
+.nci-fact-text { font-size: 2.2cqw; font-weight: 500; line-height: 1.28; color: color-mix(in srgb, var(--nci-navy) 82%, var(--nci-white)); }
+.nci-cta { font-size: 2.4cqw; font-weight: 700; letter-spacing: .16em; text-transform: uppercase; color: var(--nci-sun-deep); }
+
+/* The shared NempoFooter supplies the same .kmt-footer pills as slide 35. */
+.nci-root .kmt-footer { z-index: 8; font-family: 'DM Sans', sans-serif; }

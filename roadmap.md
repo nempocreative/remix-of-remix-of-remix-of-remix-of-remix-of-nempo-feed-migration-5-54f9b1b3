@@ -15,4 +15,4 @@
 - [x] Slide 56: latar diganti gambar panggung kelapa dari pemilik, semua tulisan dibuat lucu/ceria; PNG unduhan dibuat ulang
 - [x] Slide 56: baris "Segera di cafe & tempat wisata" dimiringkan sama seperti stiker di atasnya; PNG unduhan dibuat ulang
 - [ ] NEMPO Feed slide 57: poster ceria Car Free Day Jl. Ibrahim Adji Garut ("jajan apa?": Cilok & Cimol, Seblak, Bubur Ayam, Surabi), judul harus jelas terbaca; PNG unduhan
-- [ ] NEMPO Feed slide 58: Car Free Day Jl. Ibrahim Adji Garut dengan info/foto dari internet
+- [ ] NEMPO Feed slide 58: Car Free Day Jl. Ibrahim Adji Garut dengan info dari internet; gambar harus FOTO ASLI dari internet (bukan ilustrasi AI)
