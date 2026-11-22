@@ -4,4 +4,4 @@
 .ggsm-shade{position:absolute;inset:0;z-index:1;pointer-events:none;background:var(--ggsm-shade)}
 
 /* One simple centred line, the only text on the slide. */
-.ggsm-title{position:absolute;z-index:2;left:6cqw;right:6cqw;top:50%;margin:0;transform:translateY(-50%);text-align:center;font-family:'DM Sans',sans-serif;font-weight:500;font-size:10.5cqw;line-height:1;letter-spacing:.04em;color:var(--ggsm-cream);text-shadow:var(--ggsm-text-shadow)}
+.ggsm-title{position:absolute;z-index:2;left:6cqw;right:6cqw;top:50%;margin:0;transform:translateY(-50%);text-align:center;font-family:'DM Sans',sans-serif;font-weight:500;font-size:6.5cqw;line-height:1;letter-spacing:.04em;color:var(--ggsm-cream);text-shadow:var(--ggsm-text-shadow)}
