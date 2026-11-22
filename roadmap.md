@@ -18,3 +18,4 @@
 - [x] NEMPO Feed slide 58: Car Free Day Jl. Ibrahim Adji Garut dengan info dari internet; gambar harus FOTO ASLI dari internet (bukan ilustrasi AI)
 - [x] GGS Story slide 08: video pijat estetik (close-up kaki lalu tangan) dengan teks "Massage time" di tengah + download MP4
 - [ ] GGS Story slide 08: bingkai header/footer Story belum dipasang — menunggu pemilik mengirim ulang gambar bingkainya (media proyek lama tidak ikut)
+- [ ] NEMPO Feed slide 59: layanan Momen Digital (gaya poster slide 56) dengan cuplikan web Year Book; gambar latar = suasana kelas yang lucu (BUKAN kelapa); PNG unduhan

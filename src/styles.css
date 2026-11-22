@@ -839,6 +839,29 @@
   --ncfd-text-pop: 0 .3cqw 0 #1453b8, 0 .6cqw 1.4cqw color-mix(in srgb, #0b2f74 45%, transparent);
 }
 /* Nempo Feed slide 58: informative Car Free Day poster with real news photos — same palette as slide 57. */
+.nmd-root {
+  --nmd-sky: linear-gradient(180deg, #2f9cf2 0%, #4fb4fa 14%, #5fbefc 24%);
+  --nmd-white: #ffffff;
+  --nmd-navy: #15386f;
+  --nmd-blue-deep: #1453b8;
+  --nmd-sun: #ffd23f;
+  --nmd-sun-deep: #e8901c;
+  --nmd-pink: #ff7fb4;
+  --nmd-mint: #5fe0b0;
+  --nmd-lilac: #b79cff;
+  --nmd-card-glass: color-mix(in srgb, #ffffff 92%, transparent);
+  --nmd-pop: 0 .7cqw 0 #1453b8;
+  --nmd-text-pop: 0 .3cqw 0 #1453b8, 0 .6cqw 1.4cqw color-mix(in srgb, #0b2f74 45%, transparent);
+  /* Year Book page palette from nempo.id */
+  --nmd-paper: #f4f6ff;
+  --nmd-card: #ffffff;
+  --nmd-ink: #141c3f;
+  --nmd-ink-soft: #565f88;
+  --nmd-line: #dbe1f6;
+  --nmd-accent: #2b3fd8;
+  --nmd-brass: #f2a007;
+  --nmd-phone-shadow: 0 1.2cqw 0 #1453b8, 0 2.4cqw 4cqw color-mix(in srgb, #0b2f74 45%, transparent);
+}
 .nci-root {
   --nci-sky: linear-gradient(180deg, #0a7fe8 0%, #1b98fb 22%, #2aa6fd 30%);
   --nci-sky-tint: linear-gradient(180deg, color-mix(in srgb, #0a62cc 82%, transparent) 0%, color-mix(in srgb, #0f7ae6 62%, transparent) 50%, transparent 100%);

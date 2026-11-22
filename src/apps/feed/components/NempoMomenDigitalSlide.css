@@ -1,0 +1,95 @@
+/* NEMPO Feed slide 59 — Momen Digital poster in slide 56's layout over a cute classroom. Colors in src/styles.css (.nmd-root). */
+.nmd-root {
+  position: relative; isolation: isolate; width: 100%; aspect-ratio: 3 / 4; overflow: hidden;
+  container-type: inline-size; background: var(--nmd-sky); color: var(--nmd-white);
+  font-family: 'Fredoka', 'Poppins', sans-serif;
+}
+.nmd-root * { box-sizing: border-box; }
+.nmd-root p, .nmd-root h2, .nmd-root ol, .nmd-root ul, .nmd-root figure { margin: 0; padding: 0; }
+.nmd-root ol, .nmd-root ul { list-style: none; }
+
+/* Classroom artwork; its plain blue wall melts into the sky fill that holds header and title */
+.nmd-photo {
+  position: absolute; z-index: 0; left: 0; top: 16cqw; width: 100%; height: auto; display: block;
+  -webkit-mask-image: linear-gradient(180deg, transparent 0, #000 8cqw); mask-image: linear-gradient(180deg, transparent 0, #000 8cqw);
+}
+
+/* Shared Nempo Feed header */
+.nmd-root .kmt-header { z-index: 8; font-family: 'Bricolage Grotesque', 'DM Sans', sans-serif; }
+.nmd-root .kmt-header * { letter-spacing: initial; }
+.nmd-root .kmt-name { text-shadow: var(--nmd-text-pop); }
+.nmd-root .kmt-badge { background: color-mix(in srgb, var(--nmd-navy) 60%, transparent); }
+
+/* AI-lettered white title */
+.nmd-title { position: absolute; z-index: 5; top: 15cqw; left: 0; right: 0; display: flex; justify-content: center; }
+.nmd-title-art { display: block; width: 42cqw; height: auto; pointer-events: none; user-select: none; filter: drop-shadow(0 .5cqw 0 var(--nmd-blue-deep)); }
+.nmd-sr { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+
+/* Sticker tagline + tilted line, same as slide 56 */
+.nmd-root .nmd-tagline {
+  position: absolute; z-index: 6; top: 41.5cqw; left: 50%; transform: translateX(-50%) rotate(-3deg);
+  padding: 1.4cqw 6cqw 1.6cqw; border-radius: 99cqw; background: var(--nmd-sun); color: var(--nmd-navy);
+  font-weight: 700; font-size: 4.4cqw; line-height: 1; white-space: nowrap; box-shadow: 0 .6cqw 0 var(--nmd-sun-deep);
+}
+.nmd-release {
+  position: absolute; z-index: 6; top: 50.5cqw; left: 0; right: 0; text-align: center; transform: rotate(-3deg);
+  font-size: 2.5cqw; font-weight: 600; letter-spacing: .14em; text-transform: uppercase; text-shadow: var(--nmd-text-pop);
+}
+
+/* Phone snippet of the nempo.id Year Book page */
+.nmd-phone {
+  position: absolute; z-index: 7; right: 4.5cqw; top: 57cqw; width: 25cqw; transform: rotate(5deg);
+  padding: .9cqw; border-radius: 4.2cqw; background: var(--nmd-ink); box-shadow: var(--nmd-phone-shadow);
+}
+.nmd-screen { border-radius: 3.4cqw; overflow: hidden; background: var(--nmd-paper); color: var(--nmd-ink); font-family: 'DM Sans', sans-serif; }
+.nmd-url {
+  display: flex; align-items: center; justify-content: center; gap: .6cqw; padding: 1.3cqw 1cqw .8cqw;
+  font-size: 1.15cqw; font-weight: 600; color: var(--nmd-ink-soft); background: var(--nmd-card); border-bottom: .15cqw solid var(--nmd-line);
+}
+.nmd-lock { width: .9cqw; height: .9cqw; border-radius: .2cqw; background: var(--nmd-accent); }
+.nmd-page { display: flex; flex-direction: column; gap: .7cqw; padding: 1.4cqw 1.5cqw 1.6cqw; }
+.nmd-kicker { font-size: 1cqw; font-weight: 800; letter-spacing: .24em; text-transform: uppercase; color: var(--nmd-accent); }
+.nmd-h1 { font-family: 'Playfair Display', serif; font-weight: 900; font-size: 3.2cqw; line-height: .92; letter-spacing: -.03em; }
+.nmd-school { font-size: 1.05cqw; font-weight: 600; color: var(--nmd-ink-soft); }
+.nmd-hero { display: block; width: 100%; aspect-ratio: 16 / 10; object-fit: cover; border-radius: 1.3cqw; }
+.nmd-students { display: flex; justify-content: space-between; }
+.nmd-students li { display: flex; flex-direction: column; align-items: center; gap: .3cqw; font-size: .95cqw; font-weight: 700; }
+.nmd-students img { width: 4.4cqw; height: 4.4cqw; border-radius: 50%; object-fit: cover; border: .25cqw solid var(--nmd-card); box-shadow: 0 0 0 .15cqw var(--nmd-line); }
+.nmd-quote {
+  padding: .9cqw 1cqw; border-radius: 1.1cqw; background: var(--nmd-card); border: .15cqw solid var(--nmd-line);
+  font-family: 'Playfair Display', serif; font-style: italic; font-size: 1.15cqw; line-height: 1.3; color: var(--nmd-ink-soft);
+}
+.nmd-wall {
+  align-self: flex-start; display: inline-flex; align-items: center; gap: .5cqw; padding: .6cqw 1.2cqw; border-radius: 99cqw;
+  background: var(--nmd-accent); color: var(--nmd-card); font-size: 1.05cqw; font-weight: 700;
+}
+.nmd-wall span { color: var(--nmd-brass); }
+.nmd-note {
+  position: absolute; left: -7cqw; top: -3.6cqw; transform: rotate(-9deg); padding: .8cqw 2cqw; border-radius: 99cqw;
+  background: var(--nmd-pink); color: var(--nmd-white); font-family: 'Fredoka', sans-serif; font-size: 1.9cqw; font-weight: 700;
+  white-space: nowrap; box-shadow: 0 .4cqw 0 color-mix(in srgb, var(--nmd-pink) 60%, var(--nmd-navy));
+}
+
+/* White card: chips and steps above the shared footer (same as slide 56) */
+.nmd-billing {
+  position: absolute; z-index: 6; left: 5cqw; right: 5cqw; bottom: 15cqw; padding: 1.8cqw 2.6cqw 2cqw;
+  display: flex; flex-direction: column; align-items: center; gap: 1.2cqw;
+  background: var(--nmd-card-glass); border-radius: 4cqw; box-shadow: var(--nmd-pop); color: var(--nmd-navy);
+}
+.nmd-credits { display: flex; flex-wrap: wrap; justify-content: center; align-items: center; gap: .9cqw; font-size: 2.05cqw; font-weight: 600; line-height: 1; }
+.nmd-credits strong { font-weight: 700; color: var(--nmd-blue-deep); margin-right: .4cqw; font-size: 2.5cqw; }
+.nmd-credits span { padding: .7cqw 1.6cqw; border-radius: 99cqw; background: color-mix(in srgb, var(--nmd-sun) 55%, var(--nmd-white)); }
+.nmd-credits span:nth-of-type(2) { background: color-mix(in srgb, var(--nmd-pink) 40%, var(--nmd-white)); }
+.nmd-credits span:nth-of-type(3) { background: color-mix(in srgb, var(--nmd-mint) 45%, var(--nmd-white)); }
+.nmd-credits span:nth-of-type(4) { background: color-mix(in srgb, var(--nmd-lilac) 45%, var(--nmd-white)); }
+.nmd-steps-label { font-size: 2.1cqw; font-weight: 700; letter-spacing: .2em; text-transform: uppercase; color: var(--nmd-sun-deep); }
+.nmd-steps { display: flex; align-items: center; justify-content: center; gap: 2.2cqw; flex-wrap: nowrap; white-space: nowrap; }
+.nmd-steps li { display: flex; align-items: center; gap: .9cqw; font-size: 2.55cqw; font-weight: 600; color: var(--nmd-navy); }
+.nmd-steps li span {
+  flex: none; display: grid; place-items: center; width: 3.8cqw; height: 3.8cqw; border-radius: 50%;
+  background: var(--nmd-sun); box-shadow: 0 .4cqw 0 var(--nmd-sun-deep); font-size: 2.4cqw; font-weight: 700; color: var(--nmd-navy);
+}
+.nmd-steps li:nth-child(2) span { background: var(--nmd-pink); box-shadow: 0 .4cqw 0 color-mix(in srgb, var(--nmd-pink) 60%, var(--nmd-navy)); color: var(--nmd-white); }
+.nmd-steps li:nth-child(3) span { background: var(--nmd-mint); box-shadow: 0 .4cqw 0 color-mix(in srgb, var(--nmd-mint) 60%, var(--nmd-navy)); }
+
+.nmd-root .kmt-footer { z-index: 8; font-family: 'DM Sans', sans-serif; }
