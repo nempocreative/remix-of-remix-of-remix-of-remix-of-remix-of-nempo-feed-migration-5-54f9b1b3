@@ -1,11 +1,11 @@
 {
-  "version": 1,
   "asset_id": "ab69232f-e034-4655-b8c2-efbcdbebc4c4",
-  "project_id": "771b6fd7-6859-4036-a9bf-27fa4e03c6bf",
-  "url": "/__l5e/assets-v1/ab69232f-e034-4655-b8c2-efbcdbebc4c4/ggs-story-08-pijat-tangan-kaki.mp4",
-  "r2_key": "a/v1/771b6fd7-6859-4036-a9bf-27fa4e03c6bf/ab69232f-e034-4655-b8c2-efbcdbebc4c4/ggs-story-08-pijat-tangan-kaki.mp4",
-  "original_filename": "ggs-story-08-pijat-tangan-kaki.mp4",
-  "size": 3222575,
   "content_type": "video/mp4",
-  "created_at": "2026-11-22T02:24:03Z"
+  "created_at": "2026-11-22T02:24:03Z",
+  "original_filename": "ggs-story-08-pijat-tangan-kaki.mp4",
+  "project_id": "e7f5734f-31bc-4371-892a-9d7092a0ca62",
+  "r2_key": "a/v1/e7f5734f-31bc-4371-892a-9d7092a0ca62/ab69232f-e034-4655-b8c2-efbcdbebc4c4/ggs-story-08-pijat-tangan-kaki.mp4",
+  "size": 3222575,
+  "url": "/__l5e/assets-v1/ab69232f-e034-4655-b8c2-efbcdbebc4c4/ggs-story-08-pijat-tangan-kaki.mp4",
+  "version": 1
 }
