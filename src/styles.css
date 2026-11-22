@@ -992,6 +992,13 @@
   --ggsk-text-shadow: 0 .3cqw 1.6cqw color-mix(in srgb, #3a1027 70%, transparent);
   --ggsk-shade: linear-gradient(180deg, transparent 52%, color-mix(in srgb, #3a1027 35%, transparent) 66%, color-mix(in srgb, #3a1027 78%, transparent) 84%, color-mix(in srgb, #3a1027 85%, transparent) 100%);
 }
+.ggsm-root {
+  --ggsm-taupe: #8a7a70;
+  --ggsm-ink: #2b1d18;
+  --ggsm-cream: #fff8f0;
+  --ggsm-text-shadow: 0 .25cqw 2.4cqw color-mix(in srgb, #2b1d18 65%, transparent);
+  --ggsm-shade: radial-gradient(ellipse 85% 22% at 50% 50%, color-mix(in srgb, #2b1d18 30%, transparent) 0%, transparent 100%);
+}
 .ggo-root {
   --ggo-ink: #4a0e33;
   --ggo-pink: #c2186b;
