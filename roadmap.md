@@ -16,3 +16,4 @@
 - [x] Slide 56: baris "Segera di cafe & tempat wisata" dimiringkan sama seperti stiker di atasnya; PNG unduhan dibuat ulang
 - [ ] NEMPO Feed slide 57: poster ceria Car Free Day Jl. Ibrahim Adji Garut ("jajan apa?": Cilok & Cimol, Seblak, Bubur Ayam, Surabi), judul harus jelas terbaca; PNG unduhan
 - [x] NEMPO Feed slide 58: Car Free Day Jl. Ibrahim Adji Garut dengan info dari internet; gambar harus FOTO ASLI dari internet (bukan ilustrasi AI)
+- [ ] GGS Story slide 08: video pijat estetik (close-up tangan & kaki saja, ruang pijat GGS dari foto pemilik, gaya contoh Pinterest) — gambar awal kaki & tangan sudah jadi (Files: videos/ggs-massage/); menunggu kredit untuk membuat 2 klip video, lalu pasang di slide + tombol download MP4
