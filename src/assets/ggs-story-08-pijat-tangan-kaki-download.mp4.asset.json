@@ -1,11 +1,11 @@
 {
-  "version": 1,
   "asset_id": "5dfa8cf7-9a4d-4ea9-ad84-bbe2cd89cce2",
-  "project_id": "e7f5734f-31bc-4371-892a-9d7092a0ca62",
-  "url": "/__l5e/assets-v1/5dfa8cf7-9a4d-4ea9-ad84-bbe2cd89cce2/ggs-story-08-massage-time.mp4",
-  "r2_key": "a/v1/e7f5734f-31bc-4371-892a-9d7092a0ca62/5dfa8cf7-9a4d-4ea9-ad84-bbe2cd89cce2/ggs-story-08-massage-time.mp4",
-  "original_filename": "ggs-story-08-massage-time.mp4",
-  "size": 8035005,
   "content_type": "video/mp4",
-  "created_at": "2026-11-22T02:44:22Z"
+  "created_at": "2026-11-22T02:44:22Z",
+  "original_filename": "ggs-story-08-massage-time.mp4",
+  "project_id": "5d83d26d-189f-48d7-bdae-83ef5bb28d6d",
+  "r2_key": "a/v1/5d83d26d-189f-48d7-bdae-83ef5bb28d6d/5dfa8cf7-9a4d-4ea9-ad84-bbe2cd89cce2/ggs-story-08-massage-time.mp4",
+  "size": 8035005,
+  "url": "/__l5e/assets-v1/5dfa8cf7-9a4d-4ea9-ad84-bbe2cd89cce2/ggs-story-08-massage-time.mp4",
+  "version": 1
 }
